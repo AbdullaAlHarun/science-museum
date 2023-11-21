@@ -6,7 +6,6 @@
   }
 /* header and menu CSS */
 .header {
-  min-height: 100vh; 
   width: 100%; 
   background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
   background-size: cover;
@@ -24,7 +23,7 @@ nav{
   width: 100%;
   background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
   max-height: 100px;
- }
+}
 
 .logo { 
   width:140px;
@@ -46,7 +45,6 @@ nav{
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
 .nav-links li a::before {
@@ -67,25 +65,6 @@ nav{
 
 nav .fa-bars {
   display: none;
-}
-
-.container { 
-  padding: 0 7%;
-}
-
-.header h1 { 
-  font-size: 4vw;
-  font-weight: 500; 
-  color: #fff; 
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 12px;
-}
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .search-bar {
@@ -165,54 +144,6 @@ nav .fa-bars {
 @media (max-width: 920px) {
   .search-bar {
     display: none;
-  }
-}
-
-/*Background-video css*/
-.back-video {
-  position: absolute;
-  right: 0; 
-  bottom: 0;
-  min-height: 100%;
-  min-width: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-}
-
-.hero-btn {
-  background: linear-gradient(#6a33ff, #351a80);
-  color: #fff;
-  font-size: 16px;
-  padding: 12px 24px;
-  border-radius: 30px;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  text-decoration: none;
-  margin-left: 30px;
-}
-
-.hero-btn a {
-  margin: 10px auto;
-  color: #fff;
-  font-size: 16px;
-  font-family: 'KoHo', sans-serif;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-}
-@media (min-aspect-ratio: 16/9) {
-  .back-video { 
-    width: 100%; 
-    height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .back-video { 
-    width: auto; 
-    height: 100%;
   }
 }
 
@@ -365,5 +296,8 @@ footer {
     display: none;
   }
 }
-   
 
+.container { 
+    padding: 140px 7% 60px 7%;
+  }
+  
