@@ -162,11 +162,6 @@ nav .fa-bars {
   }
 }
 
-@media (max-width: 920px) {
-  .search-bar {
-    display: none;
-  }
-}
 
 /*Background-video css*/
 .back-video {
@@ -357,6 +352,12 @@ footer {
   .social-icons {
     padding-bottom: 30px;
     text-align: center;
+  }
+}
+
+@media (max-width: 920px) {
+  .search-bar {
+    display: none;
   }
 }
    
