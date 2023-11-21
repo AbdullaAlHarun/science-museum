@@ -42,7 +42,7 @@ nav{
 .nav-links li a{
   position: relative;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 500;
   text-decoration: none;
   margin-left: 30px;
@@ -119,7 +119,7 @@ nav .fa-bars {
 
   nav {
     position: fixed; 
-    top: o; 
+    top: 0; 
     z-index: 100 ; 
     display: inline-block;
     width: 100%;
@@ -209,3 +209,155 @@ nav .fa-bars {
     height: 100%;
   }
 }
+
+/*Footer*/
+footer {
+  width: 100%;
+  bottom:0;
+  color: #fff;
+  padding: 10px 0 30px;
+  font-size: 17px;
+  line-height: 20px;
+  background: linear-gradient(#1f0073, #000000)
+}
+
+.row {
+  padding: 0 7%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.col h3 {
+  width:fit-content;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.email-id { 
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.col form { 
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.col form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.col form input { 
+  width: 100%; 
+  background: transparent;
+  color:#ece0e0;
+  outline: none;
+  border:0;
+}
+
+.col form button { 
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.col button .fa-solid {
+  font-size: 16px;
+  color: #fff; 
+}
+
+.col:placeholder {
+  color: #fff;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000; 
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+/* Footer Media queary for responsive */
+@media (max-width: 700px) {
+  .logo { 
+    position: fixed;
+    top: 1%;
+    left: 7%;
+  }
+
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+  
+  .col:nth-child(2),
+  .col:nth-child(3) {
+     flex-basis: 100%;
+  }
+  
+  footer .logo { 
+    width:140px;
+    cursor: pointer;
+  }
+
+  .social-icons {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 920px) {
+  .search-bar {
+    display: none;
+  }
+}
+   
+
