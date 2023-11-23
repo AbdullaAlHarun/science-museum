@@ -8,7 +8,7 @@
     <!-- Google Web Fonts and fontawsome-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
     
     <!-- Icon Font Stylesheet -->
@@ -34,7 +34,7 @@
             <form action="" class="search-bar">
                 <input type="text" placeholder="Search">
             </form>
-            <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
+            <i class="fas fa-bars" aria-label="menu" onclick="toggleBtn()"></i>
         </nav>
     </div>
     <div class="container">
@@ -44,7 +44,7 @@
     <footer>
         <div class="row">
             <div class="col">
-                <img src="assets/icon/logo2.png" class="logo">
+                <img src="assets/icon/logo2.png" class="logo" alt="science museum logo">
                 <p>
                     Explore our collection beyond the museum floor and find out the fascinating histories behind even the smallest objects.
                 </p>
@@ -62,7 +62,7 @@
                 <ul>
                     <li><a href="#"></a>Blog Post</li>
                     <li><a href="#"></a>Work for us</li>
-                    <li><a href="#">Volunteering</a></li>
+                    <li><a href="#"></a>Volunteering</a></li>
                     <li><a href="#"></a>Press office</li>
                     <li><a href="#"></a>Venue hire</li>
                 </ul>
@@ -88,21 +88,6 @@
     </footer>
 
   <!--Javascripts-->
-    <script>
-        var navBar = document.getElementById("navBar");
-
-        function togglebtn() {
-            navBar.classList.toggle("hidemenu")
-        }
-        const toTop = document.querySelector(".to-top");
-
-        window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
-        })
-    </script>
+    <script src="js/script.js"> </script>
 </body>
 </html>
