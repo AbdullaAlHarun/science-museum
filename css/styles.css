@@ -147,12 +147,12 @@ nav .fa-bars {
 
 #highlights {
   width: 100%;
-  padding: 70px 0; 
-  background: #efefef;
+  padding: 70px 7%; 
+  background: hsl(0, 0%, 94%);
 }
 
 .card-box {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -216,6 +216,41 @@ hr {
   bottom: 40%;
   opacity: 1;
 }
+
+/*Reason Section*/
+#reason {
+  width: 100%;
+  padding: 70px 7%; 
+  background: #fff;
+}
+
+.reason-desc{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.reason-desc h3 {
+  color: #000; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.reason-desc p {
+  color: #909090; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+
 
 
 /*Footer*/
