@@ -35,16 +35,26 @@
                 <input type="text" placeholder="Search">
             </form>
             <i class="fas fa-bars" aria-label="menu" onclick="toggleBtn()"></i>
-
-
         </nav>
-        <div class="container search">
-            <h1>Unleash Your Imagination</h1>
-            <h3>Welcome to Our Children's Science Paradise</h3>
-           
+        <div class="container bg-text">
+            <h3>Discover the Wonders of Science!</h3>
+            <h1>Welcome to our Children's Science Museum</h1>
+           <p>
+            <span>
+                <i class="fa-solid fa-circle fa-spin" style="color: #21a207;"></i>
+            </span>
+            The museum is open today from 9:00 AM to 9:45 PM | 
+            <span>
+                <a href="collection.html">See list of available galleries 
+                    <span>
+                        <i class="fa-solid fa-right-long" style="color: #fcfcfd;"></i>
+                    </span>
+                </a>
+            </span>
+            </p>
         </div>
     </div>
-
+  
     <!--HIGHLIGHTS-->
     <section id="highlights">
         <div class="title-text">
@@ -219,14 +229,13 @@
         </div>
     </section>
    
-
     <!--Footer Section-->
     <footer>
         <div class="row">
             <div class="col">
-                <img src="assets/icon/logo2.png" class="logo" alt="this is site main logo">
+                <img src="assets/icon/logo2.png" class="logo">
                 <p>
-                Explore our collection beyond the museum floor and find out the fascinating histories behind even the smallest objects.
+                    Explore our collection beyond the museum floor and find out the fascinating histories behind even the smallest objects.
                 </p>
             </div>
             <div class="col">
@@ -242,7 +251,7 @@
                 <ul>
                     <li><a href="#"></a>Blog Post</li>
                     <li><a href="#"></a>Work for us</li>
-                    <li><a href="#"></a>Volunteering</a></li>
+                    <li><a href="#">Volunteering</a></li>
                     <li><a href="#"></a>Press office</li>
                     <li><a href="#"></a>Venue hire</li>
                 </ul>
@@ -252,7 +261,7 @@
                 <form >
                     <i class="far fa-envelope"></i>
                     <input type="email" placeholder="Enter your email id" required>
-                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit"><i class=" fa-solid fa-arrow-right"></i></button>
                 </form>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -268,6 +277,21 @@
     </footer>
 
   <!--Javascripts-->
-  <script src="js/script.js"> </script>
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        })
+    </script>
 </body>
 </html>

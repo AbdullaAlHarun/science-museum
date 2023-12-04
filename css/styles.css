@@ -74,20 +74,39 @@ nav .fa-bars {
   padding: 0 7%;
 }
 
-.header h1 { 
-  font-size: 4vw;
-  font-weight: 500; 
-  color: #fff; 
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 12px;
-}
-
-.search {
+.bg-text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.bg-text h3 { 
+  font-size: 2vw;
+  font-weight: 500; 
+  color: #e67e22; 
+  padding-top: 20%;
+}
+
+.bg-text h1 { 
+  font-size: 4vw;
+  font-weight: 500; 
+  color: #fff; 
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.bg-text p {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 2vw;
+}
+
+.bg-text a {
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #e67e22;
+  font-size: 2vw;
 }
 
 .search-bar {
