@@ -102,13 +102,6 @@ nav .fa-bars {
   font-size: 2vw;
 }
 
-.bg-text a {
-  text-decoration: none;
-  margin-bottom: 40px;
-  color: #e67e22;
-  font-size: 1.5vw;
-}
-
 .banner-btn {
   text-align: center;
   color: #fff;
@@ -126,7 +119,7 @@ nav .fa-bars {
   position: relative;
   z-index: 1;
   transition: color 0.5s;
-
+  font-size: 22px;
 }
 
 .banner-btn a span {
@@ -268,11 +261,11 @@ nav .fa-bars {
 }
 
 .card-desc p {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .card-desc h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .single-card:hover .card-desc{
@@ -314,7 +307,6 @@ nav .fa-bars {
 }
 
 /*:::Features Section CSS:::*/
-
 #feature {
   width: 100%; 
   padding: 70px  0;
@@ -365,7 +357,6 @@ nav .fa-bars {
   color:#009688;
   border-radius: 8px;
   border: 1px solid #009688;
-
 }
 
 .features-text p {
@@ -487,7 +478,6 @@ footer {
 
 /* Media queary for responsive */
 @media (max-width: 700px) {
-  
   .logo { 
     position: fixed;
     top: 1%;
@@ -552,10 +542,6 @@ footer {
 
   .bg-text p {
     padding-top: 20px;
-    font-size: 4vw;
-  }
-
-  .bg-text a {
     font-size: 4vw;
   }
 
@@ -642,10 +628,6 @@ footer {
 
   .reason-desc p {
     font-size: 30px;
-  }
-
-  .bg-text a {
-    font-size: 2vw;
   }
 }
    
