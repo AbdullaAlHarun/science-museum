@@ -7,7 +7,8 @@
 /* header and menu CSS */
 .header {
   width: 100%; 
-  background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+  min-height: 80vh;
+  background-image: url("../assets/images/gallary.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -87,7 +88,77 @@ nav .fa-bars {
 ::Placeholder { 
   color: #cac7ff;
 }
- 
+
+.bg-text h1 { 
+  font-size: 4vw;
+  font-weight: 500; 
+  color: #ff6f0f; 
+  padding-bottom: 12px;
+}
+
+.bg-text p {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 2vw;
+}
+
+.bg-text a {
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #e67e22;
+  font-size: 1.5vw;
+}
+
+.container { 
+  padding: 140px 7% 60px 7%;
+}
+
+/*content section*/
+.hours {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.hours-col h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #ff6f0f; 
+}
+
+.hours-col h4 {
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 0;
+  text-decoration: underline;
+}
+
+.hours-col p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours-col {
+  flex-basis: 31%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.85),#7600ffd9);
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.hours-col:hover {
+  box-shadow: 0 0 60px 0 #7600ffd9;
+}
+
 /*Footer*/
 footer {
   width: 100%;
@@ -200,11 +271,6 @@ footer {
   padding: 8px;
 }
 
-/*main content Css*/
-.container { 
-    padding: 140px 7% 60px 7%;
-  }
-  
 /* Media queary for header and menu */
 @media (max-width: 700px) {
   .logo { 
@@ -220,7 +286,7 @@ footer {
     display: inline-block;
     width: 100%;
     padding: 100px 7% 0;
-    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),#6c3da1d9);
     text-align: right;
     max-height: 100px;
     overflow: hidden;
@@ -255,6 +321,10 @@ footer {
   .hidemenu {
     max-height: 350px;
     padding-bottom: 15px;
+  }
+  /*main content query*/
+  .row {
+    flex-direction: column;
   }
 
   /*footer media query*/
