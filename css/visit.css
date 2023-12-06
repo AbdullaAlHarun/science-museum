@@ -27,7 +27,7 @@ nav {
 }
 
 .logo { 
-  width:140px;
+  width: 140px;
   height: 80px;
   cursor: pointer;
 }
@@ -94,6 +94,8 @@ nav .fa-bars {
   font-weight: 500; 
   color: #ff6f0f; 
   padding-bottom: 12px;
+  padding-top: 250px;
+  text-decoration: underline;
 }
 
 .bg-text p {
@@ -124,13 +126,13 @@ nav .fa-bars {
   text-align: center;
   font-weight: 600;
   color: #ff6f0f; 
+  padding-bottom: 8px;
 }
 
 .hours-col h4 {
   font-weight: 600;
   color: #fff;
   padding: 5px 0;
-  text-decoration: underline;
 }
 
 .hours-col p {
@@ -146,6 +148,7 @@ nav .fa-bars {
 }
 
 .hours-col {
+  width: 100%;
   flex-basis: 31%;
   background: linear-gradient(45deg, rgba(0,0,0,0.85),#7600ffd9);
   margin-bottom: 5%;
@@ -157,6 +160,28 @@ nav .fa-bars {
 
 .hours-col:hover {
   box-shadow: 0 0 60px 0 #7600ffd9;
+}
+
+.hero-btn {
+  background: linear-gradient(#6a33ff, #351a80);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-btn a {
+  margin: 10px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*Footer*/
@@ -322,9 +347,14 @@ footer {
     max-height: 350px;
     padding-bottom: 15px;
   }
+
   /*main content query*/
   .row {
     flex-direction: column;
+  }
+
+  .bg-text h1 {
+    font-size: 8vw;
   }
 
   /*footer media query*/
@@ -338,7 +368,7 @@ footer {
   
   .col:nth-child(2),
   .col:nth-child(3) {
-     flex-basis: 100%;
+    flex-basis: 100%;
   }
   
   footer .logo { 
