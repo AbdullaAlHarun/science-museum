@@ -125,8 +125,22 @@ nav .fa-bars {
 .title-text {
   background: hsl(0, 0%, 94%);
   text-align: center;
-  padding: 50px;
+  padding: 16px 7%;
 }
+
+.title-text .head {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.head span {
+  font-size: 2.0rem;
+  background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
 
 .title-text h4 {
   margin: auto; 
@@ -274,7 +288,6 @@ nav .fa-bars {
 
 .banner-btn a:hover span { 
   width: 100%; 
-
 }
 
 .banner-btn a:hover { 
@@ -448,6 +461,12 @@ footer {
   .bg-text h1 {
     font-size: 40px;
   }
+
+  .head span {
+    font-size: 1rem;
+    padding: 7px;
+  }
+
   /*footer media query*/
   footer {
     bottom: unset;
