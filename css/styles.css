@@ -6,7 +6,7 @@
 
 /* header and menu CSS */
 .header {
-  min-height: 100vh; 
+  min-height: 80vh; 
   width: 100%; 
   background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
   url("../assets/images/main-background.jpg");
@@ -84,7 +84,7 @@ nav .fa-bars {
 .bg-text h3 { 
   font-size: 2vw;
   font-weight: 500; 
-  color: #e67e22; 
+  color: #FF4500; 
   padding-top: 20%;
 }
 
@@ -128,14 +128,13 @@ nav .fa-bars {
   position: absolute;
   top: 0;
   left:0;
-  background: #e67e22;
+  background: #FF4500;
   z-index: -1;
   transition: 0.5s;
 }
 
 .banner-btn a:hover span { 
   width: 100%; 
-
 }
 
 .banner-btn a:hover { 
@@ -165,12 +164,12 @@ nav .fa-bars {
 
 .square ul li {
   position: absolute;
-  border: 1px solid #fff;
+  border: 1px solid #FF4500;
   width: 30px;
   height: 30px;
   list-style: none;
   opacity: 0;
-  background: #fff;;
+  background: #FF4500;;
 }
 
 .square li {
@@ -264,36 +263,101 @@ nav .fa-bars {
   }
 }
 
+/*Events andd activites Sections*/
+.events {
+ background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 55%, rgba(0,71,64,1) 100%);
+}
+
+.events h2 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+  font-size: 35px;
+}
+
+.box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+  padding: 30px 7%;
+}
+
+.box {
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  background: rgb(0, 0,0, 0.5);
+  border: 2px solid #FF4500;
+  border-radius: 20px;
+}
+
+.box img {
+  height: 25rem;
+  width:100%;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.box img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.box .content{
+  padding:2rem;
+}
+
+.box .content h3{
+  font-size:2rem;
+  color:#fff;
+  font-weight: 600;
+}
+
+.box .content h5{
+  font-size:1rem;
+  color:#fff;
+  font-weight: 600;
+}
+
+.box .content h3 i{
+  color: #FF4500ed;
+}
+
+.content p{
+  font-size:1.7rem;
+  color: #cac7ff;
+  padding:1rem 0;
+}
+
+.content p span{
+  font-weight: 600;
+}
 
 
 /*HIGHLIGHTS Sections*/
+
 .title-text {
+  background: hsl(0, 0%, 94%);
   text-align: center;
-  padding-bottom: 70px;
+  padding: 16px 7%;
 }
 
-.title-text p {
-  margin: auto; 
-  font-size: 20px;
-  color: #7600ffd9;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
+.title-text .head {
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
-.title-text p::after {
-  content: '';
-  width: 50px;
-  height: 35px;
-  background: linear-gradient(#7600ffd9,#fff);
-  position: absolute;
-  top:-20px;
-  left:0;
-  z-index: -1;
-  transform: rotate(10deg);
-  border-top-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+.head span {
+  font-size: 2.0rem;
+  background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 55%, rgba(0,71,64,1) 100%);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
 }
 
 .title-text h2 {
@@ -302,7 +366,7 @@ nav .fa-bars {
 
 #highlights {
   width: 100%;
-  padding: 70px 7%; 
+  padding: 0 7% 50px 7%; 
   background: hsl(0, 0%, 94%);
 }
 
@@ -465,6 +529,50 @@ nav .fa-bars {
 .features-text p {
   padding: 0 20px;
   text-align: initial;
+}
+
+/* Musuem Store sections*/
+.shop { 
+  background-image: linear-gradient(to right, #3f2321, transparent),
+  url("../assets/images/store-bg.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  margin: 40px 7% 40px 7%;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.shop h3 { 
+  font-size: 3vw;
+  line-height: 72px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.shop h5 { 
+  font-size: 22px;
+  padding-left: 20px;
+  color: #fff;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.shop p { 
+  font-size: 24px;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.shop a{
+  text-decoration: none;
+  cursor: pointer;
 }
  
 /*Footer*/

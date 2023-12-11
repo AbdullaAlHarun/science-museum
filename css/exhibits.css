@@ -141,32 +141,6 @@ nav .fa-bars {
   padding: 0.2rem 1rem;
 }
 
-
-.title-text h4 {
-  margin: auto; 
-  font-size: 20px;
-  color: #f87605;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.title-text h4::after {
-  content: '';
-  width: 50px;
-  height: 35px;
-  background: linear-gradient(#7600ffd9,#fff);
-  position: absolute;
-  top:-20px;
-  left:0;
-  z-index: -1;
-  transform: rotate(10deg);
-  border-top-left-radius: 35px;
-  border-bottom-right-radius: 35px;
-}
-
 .title-text p {
   font-size: 20px;
   padding-top: 10px;
