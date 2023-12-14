@@ -162,6 +162,15 @@ nav .fa-bars {
   color: #cac7ff;
 }
 
+.fa-spin {
+  color: #21a207;
+}
+
+.fa-circle {
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
 .square ul li {
   position: absolute;
   border: 1px solid #FF4500;
@@ -340,7 +349,6 @@ nav .fa-bars {
 
 
 /*HIGHLIGHTS Sections*/
-
 .title-text {
   background: hsl(0, 0%, 94%);
   text-align: center;
@@ -573,6 +581,36 @@ nav .fa-bars {
 .shop a{
   text-decoration: none;
   cursor: pointer;
+}
+
+/*to top btn css */
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
  
 /*Footer*/

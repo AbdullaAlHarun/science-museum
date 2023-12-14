@@ -8,7 +8,8 @@
 .header {
   width: 100%; 
   min-height: 60vh;
-  background-image: url("../assets/images/exibition.jpg");
+  background-image:linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
+  url("../assets/images/exibition.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -98,7 +99,7 @@ nav .fa-bars {
 .bg-text h1 { 
   font-size: 4vw;
   font-weight: 500; 
-  color: #fff; 
+  color: #FF6F0F; 
   padding: 100px 7% 20px 7%;
   text-decoration: underline;
 }
@@ -119,7 +120,7 @@ nav .fa-bars {
   flex-wrap: wrap;
   position: relative;
   gap: 100px 50px;
-  background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+  background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 55%, rgba(0,71,64,1) 100%);
 }
 
 .title-text {
@@ -255,7 +256,7 @@ nav .fa-bars {
   position: absolute;
   top: 0;
   left:0;
-  background: #e67e22;
+  background: #FF6F0F;
   z-index: -1;
   transition: 0.5s;
 }
@@ -266,6 +267,36 @@ nav .fa-bars {
 
 .banner-btn a:hover { 
   color: #000;
+}
+
+/*to top btn css */
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*Footer*/
