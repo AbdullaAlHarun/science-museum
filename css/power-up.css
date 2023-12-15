@@ -133,6 +133,11 @@ nav .fa-bars {
   padding-bottom: 24px;
 }
 
+.post-left p {
+  color: #000; 
+  font-size: 18px;
+}
+
 .post-right {
   flex-basis: 32%;
   background-color: #000;
@@ -170,7 +175,9 @@ nav .fa-bars {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  margin: 20px 0;
 }
+
 .iframe-container iframe{
   position: absolute;
   top:0;
@@ -179,6 +186,82 @@ nav .fa-bars {
   height: 100%;
 }
 
+/*Events andd activites Sections*/
+.events {
+  background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 55%, rgba(0,71,64,1) 100%);
+  margin-top: 30px;
+}
+ 
+ .events h2 {
+   padding: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff; 
+   font-size: 35px;
+ }
+ 
+ .box-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap:2rem;
+   padding: 30px 7%;
+ }
+ 
+ .box {
+   flex:1 1 30rem;
+   border-radius: .5rem;
+   overflow: hidden;
+   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+   background: rgb(0, 0,0, 0.5);
+   border: 2px solid #FF4500;
+   border-radius: 20px;
+ }
+ 
+ .box img {
+   height: 25rem;
+   width:100%;
+   object-fit: cover;
+   transition: 2s;
+ }
+ 
+ .box img:hover {
+   -webkit-transform: scale(0.8);
+   -ms-transform: scale(0.8);
+   transform: scale(0.8);
+   transition: 1s ease;
+ }
+ 
+ .box .content{
+   padding:2rem;
+ }
+ 
+ .box .content h3{
+   font-size:2rem;
+   color:#fff;
+   font-weight: 600;
+ }
+ 
+ .box .content h5{
+   font-size:1rem;
+   color:#fff;
+   font-weight: 600;
+ }
+ 
+ .box .content h3 i{
+   color: #FF4500ed;
+ }
+ 
+ .content p{
+   font-size:1.7rem;
+   color: #cac7ff;
+   padding:1rem 0;
+ }
+ 
+ .content p span{
+   font-weight: 600;
+ }
+ 
 /*to top btn css */
 .to-top {
   background: white;
@@ -431,4 +514,8 @@ footer {
     flex-direction: column;
     margin-top: 20px;
   }
+
+  .iframe-container{
+    margin: 20px 0; 
+  }  
 }
