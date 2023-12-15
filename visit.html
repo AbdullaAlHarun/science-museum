@@ -28,7 +28,7 @@
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="visit.html">VISIT</a></li>
                 <li><a href="exhibits.html">EXHIBITS</a></li>
-                <li><a href="collection.html">STORE</a></li>
+                <li><a href="collection.html">SHOP</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
             <form action="" class="search-bar">
@@ -39,8 +39,42 @@
         <div class="container bg-text">
             <h4><a href="index.html">Home > </a> <span> Visit </span></h4>
             <h1>Visit and Tickets</h1>
-            <button class="hero-btn"><a href="#">Buy Tickets</a></button>
+            <p>
+                To ensure that you have a safe and enjoyable visit, 
+                please arrive at our main entrance within your chosen time slot.
+                Latecomers and those without a ticket may not be admitted.
+                Children under 12 must be accompanied by an adult (18+).
+            </p>
         </div>
+    </div>
+
+    <!--Buy Ticket-->
+    <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id ="chekin-date" required>
+            </div>
+            <div class="form-item">
+                <label for="checkInTime">Check-In Time:</label>
+                <input type="time" id="checkInTime" name="checkInTime" required>
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="0" id ="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: (0-6) </label>
+                <input type="number" min="1" value ="0" id = children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Children:(6-18) </label>
+                <input type="number" min ="1" value = "0" id = "rooms">
+            </div>
+            <div class="form-item">
+                <button type="button" class="hero-btn"><a href="#">Buy Now</a></button>
+            </div>
+        </form>
     </div>
     
     <!--Main content-->
