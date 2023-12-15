@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
   
-/* header and menu CSS */
+  /* header and menu CSS */
 .header {
   width: 100%; 
   min-height: 70vh;
-  background-image: url("../assets/post/power-up.jpeg");
+  background-image: url("../assets/post/imax.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -108,7 +108,7 @@ nav .fa-bars {
   color: #fff; 
   text-decoration: none;
   padding: 120px 7% 20px 7%;
-} 
+}
 
 /*main content*/
 .container { 
