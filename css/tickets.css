@@ -99,37 +99,97 @@ nav .fa-bars {
 
 /*main content Css*/
 .container {
-  padding: 140px 7% 60px 7%;
+  padding-top: 100px;
 }
 
-/*to top btn css */
-.to-top {
-  background: white;
-  position: fixed;
-  bottom: 16px;
-  right: 32px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.payment {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 32px;
-  color: #1f1f1f;
-  text-decoration: none;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../assets/post/payment.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-.to-top.active {
-  bottom: 32px;
-  pointer-events: auto;
-  opacity: 1;
+.payment form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-html {
-  scroll-behavior: smooth;
+.payment form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.payment form .row .col {
+  flex: 1 1 250px;
+}
+
+.payment form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.payment form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.payment form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.payment form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.payment form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.payment form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.payment form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #ff6f0f;
+  color: #fff;
+  margin-top: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.payment form .submit-btn:hover {
+  background: rgba(0, 0, 255, 0.15);
+  color: black;
 }
 
 /*Footer*/
