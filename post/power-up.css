@@ -1,10 +1,10 @@
-  *{
-    font-family: 'KoHo', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-  }
+*{
+  font-family: 'KoHo', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+}
   
-  /* header and menu CSS */
+/* header and menu CSS */
 .header {
   width: 100%; 
   min-height: 70vh;
@@ -108,8 +108,7 @@ nav .fa-bars {
   color: #fff; 
   text-decoration: none;
   padding: 120px 7% 20px 7%;
-}
- 
+} 
 
 /*main content*/
 .container { 

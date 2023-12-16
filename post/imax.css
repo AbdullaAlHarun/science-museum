@@ -8,11 +8,8 @@
 /* header and menu CSS */
 .header {
   width: 100%;
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.85),
-    rgba(118, 0, 255, 0.85)
-  );
+  min-height: 70vh;
+  background-image: url("../assets/post/imax.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -97,99 +94,220 @@ nav .fa-bars {
   color: #cac7ff;
 }
 
-/*main content Css*/
-.container {
-  padding-top: 100px;
-}
-
-.payment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../assets/post/payment.JPG);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.payment form {
-  padding: 20px;
-  width: 700px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.payment form .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.payment form .row .col {
-  flex: 1 1 250px;
-}
-
-.payment form .row .col .title {
-  font-size: 20px;
-  color: #333;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.payment form .row .col .inputBox {
-  margin: 15px 0;
-}
-
-.payment form .row .col .inputBox span {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.payment form .row .col .inputBox input {
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
-  font-size: 15px;
-  text-transform: none;
-}
-
-.payment form .row .col .inputBox input:focus {
-  border: 1px solid #000;
-}
-
-.payment form .row .col .flex {
-  display: flex;
-  gap: 15px;
-}
-
-.payment form .row .col .flex .inputBox {
-  margin-top: 5px;
-}
-
-.container form .row .col .inputBox img {
-  height: 34px;
-  margin-top: 5px;
-  filter: drop-shadow(0 0 1px #000);
-}
-
-.payment form .submit-btn {
-  width: 100%;
-  padding: 12px;
-  font-size: 17px;
-  background: #ff6f0f;
+.bg-text a {
+  text-decoration: none;
   color: #fff;
-  margin-top: 5px;
-  border: 0;
-  outline: 0;
+}
+
+.bg-text h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #ff6f0f;
+  padding: 100px 7% 20px 7%;
+  text-decoration: underline;
+}
+
+.bg-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 120px 7% 20px 7%;
+}
+
+/*main content*/
+.container {
+  padding: 14px 7% 60px 7%;
+}
+
+.post-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-left {
+  flex-basis: 65%;
+}
+
+.post-left h2 {
+  font-weight: bold;
+  color: #000;
+  font-size: 28px;
+  padding-bottom: 24px;
+}
+
+.post-left p {
+  color: #000;
+  font-size: 20px;
+}
+
+.post-right {
+  flex-basis: 32%;
+  background-color: #000;
+  color: #fff;
+}
+
+.post-content {
+  padding: 30px;
+}
+
+.post-right h3 {
+  padding: 30px 0 0 30px;
+  color: #ff6f0f;
+}
+
+.post-right p {
+  padding-bottom: 18px;
+}
+
+.post-right a {
+  color: #fff;
+  background-color: #ff6f0f;
+  padding: 8px;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.payment form .submit-btn:hover {
-  background: rgba(0, 0, 255, 0.15);
-  color: black;
+.post-right a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 20px 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Events andd activites Sections*/
+.events {
+  background: linear-gradient(
+    80deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 71, 64, 1) 100%
+  );
+  margin-top: 30px;
+}
+
+.events h2 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 35px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 30px 7%;
+}
+
+.box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  background: rgb(0, 0, 0, 0.5);
+  border: 2px solid #ff4500;
+  border-radius: 20px;
+}
+
+.box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.box img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.box .content {
+  padding: 2rem;
+}
+
+.box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.box .content h5 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.box .content h3 i {
+  color: #ff4500ed;
+}
+
+.content p {
+  font-size: 1.7rem;
+  color: #cac7ff;
+  padding: 1rem 0;
+}
+
+.content p span {
+  font-weight: 600;
+}
+
+.banner-btn {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.banner-btn a {
+  width: 160px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.5px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+  font-size: 22px;
+}
+
+.banner-btn a span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff4500;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+  width: 100%;
+}
+
+.banner-btn a:hover {
+  color: #000;
 }
 
 /*Footer*/
@@ -385,8 +503,45 @@ footer {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .search-bar {
     display: none;
+  }
+
+  .card {
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 250px;
+    left: 0;
+  }
+
+  .card-content {
+    width: 100%;
+    height: auto;
+    right: -25px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .card-content::before {
+    top: 0;
+    bottom: 0;
+  }
+
+  .bg-text h1 {
+    font-size: 32px;
+  }
+
+  .post-row {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .iframe-container {
+    margin: 20px 0;
   }
 }
