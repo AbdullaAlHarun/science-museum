@@ -8,11 +8,13 @@
 /* header and menu CSS */
 .header {
   width: 100%;
+  min-height: 70vh;
   background-image: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0.85),
     rgba(118, 0, 255, 0.85)
-  );
+  ),
+  url("../assets/post/kid.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -97,10 +99,114 @@ nav .fa-bars {
   color: #cac7ff;
 }
 
+.bg-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg-text h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #ff6f0f;
+  padding: 100px 7% 20px 7%;
+  text-decoration: underline;
+}
+
+.bg-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 120px 7% 20px 7%;
+}
+
+.bg-text p {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 16px;
+  padding: 30px 7% 20px 7%;
+}
+
 /*main content*/
 
 .container {
   padding: 14px 7% 60px 7%;
+}
+
+.event {
+  border: 2px solid #ff6f0f;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.event-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-col {
+  flex-basis: 50%;
+  padding: 30px;
+  background: linear-gradient(
+    80deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 71, 64, 1) 100%
+  );
+}
+
+.event-col img {
+  width: 100%;
+  height: 18rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-col img:hover {
+  transform: scale(1.1);
+} 
+
+.event-col h2, h3{
+  padding-top: 5px;
+  color: #fff;
+}
+
+.event-col p {
+  padding: 15px 0 25px;
+  color: #fff;
+}
+
+.event-col a {
+  margin-top: 10px;
+}
+
+.red-btn {
+  border:1px solid #f44336;
+  background: transparent;
+  color:#f44336;
+}
+
+.red-btn:hover {
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 /*to top btn css */
@@ -245,11 +351,6 @@ footer {
   padding: 8px;
 }
 
-/*main content Css*/
-.container {
-  padding: 140px 7% 60px 7%;
-}
-
 /* Media queary for header and menu */
 @media (max-width: 700px) {
   .logo {
@@ -306,6 +407,10 @@ footer {
     padding-bottom: 15px;
   }
 
+  .event-row {
+    flex-direction: column;
+  }
+
   /*footer media query*/
   footer {
     bottom: unset;
@@ -359,4 +464,5 @@ footer {
     top: 0;
     bottom: 0;
   }
+
 }
