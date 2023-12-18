@@ -90,7 +90,7 @@ nav .fa-bars {
   font-size: 2vw;
   font-weight: 500;
   color: #ff4500;
-  padding-top: 20%;
+  padding-top: 12%;
 }
 
 .bg-text h1 {
@@ -110,21 +110,22 @@ nav .fa-bars {
 .banner-btn {
   text-align: center;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 8px;
 }
 
 .banner-btn a {
-  width: 160px;
+  width: 140px;
   text-decoration: none;
   display: inline-block;
   margin: 0 10px;
-  padding: 12px 0;
+  padding: 6px 0;
   color: #fff;
   border: 0.5px solid #fff;
   position: relative;
   z-index: 1;
   transition: color 0.5s;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .banner-btn a span {
@@ -176,107 +177,6 @@ nav .fa-bars {
   border-radius: 25px;
 }
 
-.square ul li {
-  position: absolute;
-  border: 1px solid #ff4500;
-  width: 30px;
-  height: 30px;
-  list-style: none;
-  opacity: 0;
-  background: #ff4500;
-}
-
-.square li {
-  top: 50vh;
-  left: 45vw;
-  animation: square 10s linear infinite;
-}
-
-.square li:nth-child(2) {
-  top: 80vh;
-  left: 10vw;
-  animation-delay: 2s;
-}
-
-.square li:nth-child(3) {
-  top: 80vh;
-  left: 85vw;
-  animation-delay: 4s;
-}
-
-.square li:nth-child(4) {
-  top: 25vh;
-  left: 70vw;
-  animation-delay: 6s;
-}
-
-.square li:nth-child(5) {
-  top: 25vh;
-  left: 10vw;
-  animation-delay: 8s;
-}
-
-@keyframes square {
-  0% {
-    transform: scale(0) rotateY(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(5) rotateY(1000deg);
-    opacity: 0;
-  }
-}
-
-.circle ul li {
-  position: absolute;
-  border: 15px solid #fff;
-  width: 30px;
-  height: 30px;
-  list-style: none;
-  opacity: 0;
-}
-
-.circle li {
-  bottom: 0;
-  left: 15vw;
-  animation: circle 10s linear infinite;
-}
-
-.circle li:nth-child(2) {
-  left: 35vw;
-  animation-delay: 2s;
-}
-
-.circle li:nth-child(3) {
-  left: 55vw;
-  animation-delay: 4s;
-}
-
-.circle li:nth-child(4) {
-  left: 75vw;
-  animation-delay: 8s;
-}
-
-.circle li:nth-child(5) {
-  left: 90vw;
-  animation-delay: 12s;
-}
-
-@keyframes circle {
-  0% {
-    transform: scale(0) rotate(0deg);
-    opacity: 1;
-    bottom: 0;
-    border-radius: 0;
-  }
-  100% {
-    transform: scale(5) rotate(1000deg);
-    opacity: 0;
-    bottom: 90vh;
-    border-radius: 50%;
-  }
-}
-
 /*Events andd activites Sections*/
 .events {
   background: linear-gradient(
@@ -288,32 +188,32 @@ nav .fa-bars {
 }
 
 .events h2 {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 35px;
+  font-size: 24px;
 }
 
 .content-body {
-  padding: 10px 7% 10px 7%;
+  padding: 0 7%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 30px 7%;
+  padding: 20px 7%;
 }
 
 .box {
-  flex: 1 1 30rem;
+  flex: 1 1 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -323,7 +223,7 @@ nav .fa-bars {
 }
 
 .box img {
-  height: 25rem;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
   transition: 2s;
@@ -337,17 +237,17 @@ nav .fa-bars {
 }
 
 .box .content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .box .content h5 {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 1.3rem;
+  color: #ff4500ed;
   font-weight: 600;
 }
 
 .box .content h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 600;
 }
@@ -357,9 +257,9 @@ nav .fa-bars {
 }
 
 .content p {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #cac7ff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .content p span {
@@ -370,12 +270,12 @@ nav .fa-bars {
 .title-text {
   background: hsl(0, 0%, 94%);
   text-align: center;
-  padding: 16px 7%;
+  padding: 12px 7%;
 }
 
 .title-text .head {
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 
 .head span {
@@ -780,12 +680,11 @@ footer {
   }
 
   .bg-text h1 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .bg-text p {
-    padding-top: 20px;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .title-text h2 {
