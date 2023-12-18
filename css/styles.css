@@ -340,13 +340,13 @@ nav .fa-bars {
   padding: 2rem;
 }
 
-.box .content h3 {
+.box .content h5 {
   font-size: 2rem;
   color: #fff;
   font-weight: 600;
 }
 
-.box .content h5 {
+.box .content h3 {
   font-size: 1rem;
   color: #fff;
   font-weight: 600;
@@ -540,7 +540,7 @@ nav .fa-bars {
   margin-bottom: 40px;
 }
 
-.shop h3 {
+.shop h5 {
   font-size: 3vw;
   line-height: 72px;
   font-weight: 700;
@@ -551,7 +551,7 @@ nav .fa-bars {
   padding-left: 20px;
 }
 
-.shop h5 {
+.shop h3 {
   font-size: 22px;
   padding-left: 20px;
   color: #fff;
