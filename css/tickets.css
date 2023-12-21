@@ -192,6 +192,11 @@ nav .fa-bars {
   color: black;
 }
 
+.submit-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /*Footer*/
 footer {
   width: 100%;

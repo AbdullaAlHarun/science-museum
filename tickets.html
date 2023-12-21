@@ -23,7 +23,9 @@
     <!--Header Section-->
     <div class="header">
         <nav id="navBar">
-            <a href="index.html" aria-label="logo, click to go to home"> <img src="assets/icon/logo.png" class="logo" alt="science museum logos"> </a>
+            <a href="index.html" aria-label="logo, click to go to home"> 
+                <img src="assets/icon/logo.png" class="logo" alt="science museum logos"> 
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="visit.html">VISIT</a></li>
@@ -32,7 +34,7 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
             <form action="" class="search-bar">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" type="search">
             </form>
             <i class="fas fa-bars" aria-label="menu" onclick="toggleBtn()"></i>
         </nav>
@@ -44,28 +46,28 @@
                     <div class="col">
                         <h3 class="title">billing address</h3>
                         <div class="inputBox">
-                            <span>full name :</span>
+                            <span>Full name :</span>
                             <input type="text" placeholder="Liam Oliver">
                         </div>
                         <div class="inputBox">
-                            <span>email :</span>
+                            <span>Email :</span>
                             <input type="email" placeholder="example@example.com">
                         </div>
                         <div class="inputBox">
-                            <span>address :</span>
-                            <input type="text" placeholder="room - street - locality">
+                            <span>Address :</span>
+                            <input type="text" placeholder="Room - Street - Locality">
                         </div>
                         <div class="inputBox">
-                            <span>city :</span>
+                            <span>City :</span>
                             <input type="text" placeholder="Oslo">
                         </div>
                         <div class="flex">
                             <div class="inputBox">
-                                <span>state :</span>
+                                <span>State :</span>
                                 <input type="text" placeholder="Norway">
                             </div>
                             <div class="inputBox">
-                                <span>zip code :</span>
+                                <span>Zip code :</span>
                                 <input type="text" placeholder="123 456">
                             </div>
                         </div>
@@ -74,34 +76,37 @@
                     <div class="col">
                         <h3 class="title">payment</h3>
                         <div class="inputBox">
-                            <span>cards accepted :</span>
+                            <span>Cards accepted :</span>
                             <img src="assets/images/card_img.png" alt="this is diffrent kind of bank card images">
                         </div>
                         <div class="inputBox">
-                            <span>name on card :</span>
+                            <span>Name on card :</span>
                             <input type="text" placeholder="mr. Liam Oliver">
                         </div>
                         <div class="inputBox">
-                            <span>credit card number :</span>
+                            <span>Credit card number :</span>
                             <input type="number" placeholder="1111-2222-3333-4444">
                         </div>
                         <div class="inputBox">
-                            <span>exp month :</span>
-                            <input type="text" placeholder="january">
+                            <span>Exp month :</span>
+                            <input type="text" placeholder="January">
                         </div>
                         <div class="flex">
                             <div class="inputBox">
-                                <span>exp year :</span>
+                                <span>Exp year :</span>
                                 <input type="number" placeholder="2025">
                             </div>
                             <div class="inputBox">
-                                <span>CVV :</span>
+                                <span>CVC :</span>
                                 <input type="text" placeholder="1234">
                             </div>
                         </div>
                     </div>
                 </div>
-                <input type="submit" description="this is payment submit button" name="payment submit button" value="Proceed to Checkout" class="submit-btn">
+                <button type="submit" class="submit-btn" description="this is payment submit button">
+                   <a href="#">Proceed to Checkout</a>
+                </button>
+               
             </form>
         </div>    
     </div>
@@ -109,7 +114,9 @@
     <footer>
         <div class="row">
             <div class="col">
-                <a href="index.html"><img src="assets/icon/logo.png" class="logo" alt="science museum logo"></a>
+                <a href="index.html" aria-label="click here to go home page">
+                    <img src="assets/icon/logo.png" class="logo" alt="science museum logo">
+                </a>
                 <p>
                     Explore our collection beyond the museum floor and find out the fascinating histories behind even the smallest objects.
                 </p>

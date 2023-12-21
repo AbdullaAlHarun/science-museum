@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Science Museum</title>
+    <title>Science Museum: Solar System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <!-- Google Web Fonts and fontawsome-->
@@ -17,13 +17,15 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     
     <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="css/rough.css">
+    <link rel="stylesheet" href="css/soalr-system.css">
 </head>
 <body>
     <!--Header Section-->
     <div class="header">
         <nav id="navBar">
-            <a href="index.html" aria-label="logo, click to go to home"> <img src="assets/icon/logo.png" class="logo" alt="science museum logos"> </a>
+            <a href="index.html" aria-label="logo, click to go to home"> 
+                <img src="assets/icon/logo.png" class="logo" alt="science museum logos"> 
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="visit.html">VISIT</a></li>
@@ -31,18 +33,72 @@
                 <li><a href="collection.html">SHOP</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            <form action="" class="search-bar">
+            <form action="" class="search-bar" type="search">
                 <input type="text" placeholder="Search">
             </form>
             <i class="fas fa-bars" aria-label="menu" onclick="toggleBtn()"></i>
         </nav>
+        <div class="bg-text">
+            <h4><a href="index.html">Home > </a> <span> Solar System </span></h4>
+            <h1>Solar System</h1>
+        </div>
     </div>
     <div class="container">
-
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+        <div class="content">
+            <div class="sun">
+              <img src="./assets/solar/sun.png" alt="sun image">
+            </div>
+            <div class="mercury"></div>
+            <div class="venus"></div>
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+            <div class="mars"></div>
+            <div class="jupiter"></div>
+            <div class="saturn"></div>
+            <div class="uranus"></div>
+            <div class="neptune"></div>
+            <div class="pluto"> </div>
+        </div>
     </div>
+    <div class="container-post">
+        <div class="post-row">
+            <div class="post-left">
+                <h2>Through fun hands-on experiences, unique objects, and stunning imagery, this exhibition allowed visitors to discover the incredible story of our closest star—the Sun.</h2>
+                <p>
+                    Set at the centre of our solar system, the Suns brilliant light shapes our sense of time, our health and our environment. People have tried to harness its power and uncover its secrets since the dawn of civilisation.
+                    <br> <br>
+                    From 3,000-year-old artefacts to upcoming space missions and even a nuclear fusion reactor, this exhibition took visitors on a visual, action-packed journey that explored the fascinating story of humankinds relationship with our closest star.   
+                </p>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S3Wa31tGi5c?si=v_T7bcPtV-e0xAnG" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="post-right">
+                <h3>SOLAR SYSTEM GALLERY</h3>
+                <div class="post-content">
+                    <p><b>DATE:</b> New events January and February 2024</p>
+                    <p><b>PRICE:</b> Free <br>
+                        booking required</p>
+                    <a href="#">BOOK NOW <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="post-content">
+                    <p><b>LOCATION:</b> West Hall, level 0</p>
+                    <p><b>AGE:</b> 5+ <br>
+                        (children under the age of 16<br>
+                         must be accompanied by an adult)
+                    </p>
+                    <a href="#">BOOK GIFT VOUCHERS <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
     <!--Footer Section-->
     <footer>
         <div class="row">
@@ -91,6 +147,7 @@
     </footer>
 
   <!--Javascripts-->
+     <script src="js/solar.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
