@@ -287,7 +287,7 @@ nav .fa-bars {
   right: 0.8em;
   width: 2em;
   height: 2em;
-  background-image: url("../assets/solar/mercury.png");
+  background-image: url("../assets/solar/mercury.jpg");
   background-size: cover;
 }
 
@@ -305,7 +305,7 @@ nav .fa-bars {
   right: 0em;
   width: 5em;
   height: 5em;
-  background-image: url("../assets/solar/earth.png");
+  background-image: url("../assets/solar/earth.jpg");
   background-size: cover;
 }
 
